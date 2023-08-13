@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #072c02;
+}
+
+body {
+    background: #e9fee7;
+    color: #072c02;
+}
+
+.links {
+    margin-left: 400px;
+}
+
+.theme {
+    border: none;
+    font-size: 30px;
+    color: inherit;
+    background: inherit;
+}
+
+.links > a {
+    background-image: linear-gradient(90deg, rgb(0, 255, 0), rgb(16, 37, 16));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    font-weight: 900;
+    transition: background-size 500ms ease;
+}
+
+.links > a:hover {
+    background-size: 100% 2px;
+}
+
+.first-part {
+    display: flex;
+    flex-flow: column;
+    gap: 150px;
+    padding: 40px 30px;
+    position: absolute;
+    z-index: 3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    gap: 35px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.intro > img {
+    width: 700px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.introduction {
+    margin-right: 100px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.introduction > h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.introduction > div {
+    font-size: 20px;
+}
+
+.introduction p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 25px;;
+}
+
+.triangle {
+    width: 120%;
+    position: absolute;
+    height: 400px;
+    transform: rotate(170deg);
+    left: -200px;
+    z-index: 1;
+}
+
+.light {
+    background: #e9fee7;
+    top: 550px;
+}
+
+.projects {
+    z-index: 0;
+    padding: 400px 70px 50px;
+    background: #0b280b;
+    width: 100%;
+    position: absolute;
+    top: 700px;
+    text-align: center;
+    color: #e9fee7;
+}
+
+.projects-title {
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.team-pic {
+    width: 750px;
+    height: auto;
+}
+
+.project {
+    padding: 30px 30px 50px;
+    display: flex;
+    flex-flow: column;
+    background: #e9fee7;
+    width: 850px;
+    gap: 15px;
+    color: #072c02;
+}
+
+.project p {
+    margin-bottom: 50px;
+}
+
+.button-link {
+    margin-top: 30px;
+    padding: 20px 40px;
+    background: #2f8936;
+    color: #e9fee7;
+    border-radius: 10px;
+}
+
+.button-link:hover, .team-pic:hover {
+    background: #e9fee7;
+    border: 2px solid #2f8936;
+    color: #072c02;
+}
+
+.dark {
+    background: #0b280b;
+    top: 3650px;
+    z-index: -1;
+}
+
+.contact {
+    width: 100%;
+    position: absolute;
+    top: 3800px;
+    z-index: -2;
+    padding: 450px 180px 0px;
+    display: flex;
+    gap: 30px;
+    flex-flow: column;
+}
+
+.contact > p {
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+
+.socials {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+p.copyright {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    align-self: center;
+}

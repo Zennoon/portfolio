@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yunus Kedir, a softy software enthusiast!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./images/groot.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a80508866.js" crossorigin="anonymous"></script>
+    <title>Yunus Kedir, a software enthusiast!</title>
 </head>
 <body>
-    <img class="bg-img" src="./images/wallpaperflare.com_wallpaper (1).jpg" alt="A picture of baby groot!">
+    <div id="first" class="first-part">
+        <header>
+            <div class="name"><a id="name" href="#" class="nav-link">Yunus Kedir</a></div>
+            <div class="links">
+                <a href="#projects" class="project-link nav-link">Projects</a>
+                <a href="#about" class="about nav-link">About Me</a>
+                <a href="#contact" class="contact-link nav-link">Contact</a>
+            </div>
+            <button name="light" class="theme" id="theme"><i class="fa-solid fa-moon"></i></button>
+        </header>
+        <div id="about" class="intro">
+            <img src="./images/baby-groot2.jpg" alt="An image of baby groot saying hi">
+            <div id="introduction" class="introduction">
+                <h1>I am Groot!</h1>
+                <div>
+                <p>Just Kidding, I am Yunus, a software engineer from Ethiopia. I am an avid learner, with a love for building sleek, minimalistic, interactive, and intuitive web applications. I am also looking into bringing Machine learning to the browser.</p>
+                <p>When I am not on my computer, I manage a charity organization in my community, and help around in my brother's pharmacy.</p>
+                <p>In my practically non-existent spare time, I enjoy reading, going on long walks, experimenting with music, and watching movies. Oh, and if you haven't guessed it already, I am a marvel fan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="triangle-light" class="triangle light"></div>
+    <div id="project-section" class="projects">
+        <h1 id="projects" class="projects-title">Projects</h1>
+        <div class="projects-container">
+            <div class="project team-video"><a href="https://www.youtube.com/watch?v=HTbDNQgBWl8" target="_blank"><img class="team-pic" src="./images/teampitch.png" alt="A screenshot of the youtube video of my project pitch"></a><div><p>This is the pitch for my team's project for the ALX foundations program</p><a href="https://www.youtube.com/watch?v=HTbDNQgBWl8" target="_blank" class="button-link video">Watch the video</a></div></div>
+            <div class="project team-slide"><a href="https://docs.google.com/presentation/d/1XVYqUClkt3VpGwWBEEgadNHX1Hq0W8CfZD3uQvPImTI/edit?usp=sharing" target="_blank"><img class="team-pic" src="./images/teamslides.png" alt="A screenshot of my team's presentation deck"></a><div><p>This is the presentation slide deck for my team's project for the ALX foundations program</p><a href="https://docs.google.com/presentation/d/1XVYqUClkt3VpGwWBEEgadNHX1Hq0W8CfZD3uQvPImTI/edit?usp=sharing" target="_blank" class="button-link slide">Go to the slide</a></div></div>
+            <div class="project portfolio"><a href="https://zennoon.github.io/portfolio/index.html" target="_blank"><img class="team-pic" src="./images/portfolioshot.png" alt="A picture of this portfolio"></a><div><p>This is the first (amateur) version of my portfolio. Hopefully, I will keep on adding more projects and functionalities to it.</p><a href="https://zennoon.github.io/portfolio/index.html" target="_blank" class="button-link portfolio">Take a look</a></div></div>
+            <div class="project odin-landing-page"><a href="https://zennoon.github.io/odin-landing-page/index.html" target="_blank"><img class="team-pic" src="./images/landing-page-shot.png" alt="A picture of my first flex project for the Odin project"></a><div><p>This is my project for The Odin Project's css flexbox module.</p><a href="https://zennoon.github.io/odin-landing-page/index.html" target="_blank" class="button-link landing-page">Take a look</a></div></div>
+        </div>
+    </div>
+    <div id="triangle-dark" class="triangle dark"></div>
+    <div id="contact-section" class="contact">
+        <h1 id="contact">Contact</h1>
+        <p>Don't hesitate to contact me for any further inquiries : ) .</p>
+        <div class="socials" id="socials">
+            <a href="mailto:yunus24kedir@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.github.com/zennoon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yunus-kedir-0a3700286/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://t.me/@Zennoon"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p class="copyright">&copy Yunus Kedir, 2023</p>
+        <script>
+            const themeButton = document.getElementById("theme");
+            const body = document.querySelector("body");
+            const header = document.querySelector("header");
+            const t1 = document.getElementById("triangle-light");
+            const t2 = document.getElementById("triangle-dark");
+            const projects = document.getElementById("project-section");
+            const project = document.getElementsByClassName("project");
+            const button_links = document.getElementsByClassName("button-link");
+            const socials = document.getElementById("socials");
+
+            const light_colors = {
+                main_bg : "#e9fee7",
+                main_txt : "#072c02",
+                alt_bg : "#0b280b",
+                alt_txt : "#e9fee7",
+                button_bg : "#2f8936",
+                button_txt : "#e9fee7",
+                project : "#e9fee7",
+                project_txt : "#072c02",
+            }
+
+            const dark_colors = {
+                main_bg : "#1e0b02",
+                main_txt : "#f7d7f9",
+                alt_bg : "#efe5a4",
+                alt_txt : "#1e0b02",
+                button_bg : "#fff8cb",
+                button_txt : "#1e0b02",
+                project : "#0f0704",
+                project_txt : "#efe5a4"
+            }
+
+            themeButton.addEventListener("click", changeTheme);
+
+            function changeTheme() {
+                if (themeButton.attributes.name.value === "light"){
+                    themeButton.attributes.name.value = "dark";
+                    themeButton.innerHTML = `<i class="fa-solid fa-sun""></i>`;
+                    body.style.background = dark_colors.main_bg;
+                    body.style.color = dark_colors.main_txt;
+                    t1.style.background = dark_colors.main_bg;
+                    t2.style.background = dark_colors.alt_bg;
+                    projects.style.background = dark_colors.alt_bg;
+                    projects.style.color = dark_colors.alt_txt;
+                    for (let i = 0; i < project.length; i++){
+                        project[i].style.background = dark_colors.project;
+                        project[i].style.color = dark_colors.project_txt;
+                        project[i].querySelector("a").style.background = "inherit";
+                        project[i].querySelector("a").style.color = dark_colors.button_txt;
+                    }
+
+                    for (let i = 0; i < button_links.length; i++) {
+                        button_links[i].style.background = dark_colors.button_bg;
+                        button_links[i].style.color = dark_colors.button_txt;
+                    }
+                    
+                    header.querySelectorAll("a").forEach((a) => {
+                        a.style.color = dark_colors.main_txt;
+                    })
+
+                    socials.querySelectorAll("a").forEach((a) => {
+                        a.style.color = dark_colors.main_txt;
+                    })
+                }
+
+                else {
+                    themeButton.attributes.name.value = "light";
+                    themeButton.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+                    body.style.background = light_colors.main_bg;
+                    body.style.color = light_colors.main_txt;
+                    t1.style.background = light_colors.main_bg;
+                    t2.style.background = light_colors.alt_bg;
+                    projects.style.background = light_colors.alt_bg;
+                    projects.style.color = light_colors.alt_txt;
+                    for (let i = 0; i < project.length; i++){
+                        project[i].style.background = light_colors.project;
+                        project[i].style.color = light_colors.project_txt;
+                        project[i].querySelector("a").style.background = "inherit";
+                        project[i].querySelector("a").style.color = light_colors.button_txt;
+                    }
+
+                    for (let i = 0; i < button_links.length; i++) {
+                        button_links[i].style.background = light_colors.button_bg;
+                        button_links[i].style.color = light_colors.button_txt;
+                    }
+
+                    header.querySelectorAll("a").forEach((a) => {
+                        a.style.color = light_colors.main_txt;
+                    })
+                    socials.querySelectorAll("a").forEach((a) => {
+                        a.style.color = light_colors.main_txt;
+                    })
+                }
+            }
+        </script>
+    </div>
 </body>
 </html>
