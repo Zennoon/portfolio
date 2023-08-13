@@ -4,4 +4,6 @@ This is my sample portfolio website repository. Hopefully I will keep updating t
 
 Photo Credits:
 
+icon : pngegg.com, nina2022[https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNcFsDU2OkrWwsJF9rlPof29uhbloTsY29yOO6ZNnQeDRmSRbO]
 
+website-image : Buffy2ville["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aaa79357-9476-4c1d-b9a8-6e881f2449d3/dfnnjoj-6a34ab1a-ecfd-4700-9197-7be8fbedc45b.jpg/v1/fill/w_1073,h_745,q_70,strp/baby_groot_by_buffy2ville_dfnnjoj-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODg5IiwicGF0aCI6IlwvZlwvYWFhNzkzNTctOTQ3Ni00YzFkLWI5YTgtNmU4ODFmMjQ0OWQzXC9kZm5uam9qLTZhMzRhYjFhLWVjZmQtNDcwMC05MTk3LTdiZThmYmVkYzQ1Yi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eYvCa2-2yXLq_WkztRG9wuMq_BdNZUlJgYc18gS7PyM"]
