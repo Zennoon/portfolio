@@ -15,7 +15,7 @@
     <div id="first" class="first-part">
         <header>
             <div class="name"><a id="name" href="#" class="nav-link">Yunus Kedir</a></div>
-            <div class="links">
+            <div id="links" class="links">
                 <a href="#projects" class="project-link nav-link">Projects</a>
                 <a href="#about" class="about nav-link">About Me</a>
                 <a href="#contact" class="contact-link nav-link">Contact</a>
@@ -60,6 +60,7 @@
             const themeButton = document.getElementById("theme");
             const body = document.querySelector("body");
             const header = document.querySelector("header");
+            const links = document.getElementById("links");
             const t1 = document.getElementById("triangle-light");
             const t2 = document.getElementById("triangle-dark");
             const projects = document.getElementById("project-section");
@@ -117,6 +118,10 @@
                         a.style.color = dark_colors.main_txt;
                     })
 
+                    links.querySelectorAll("a").forEach((a) => {
+                        a.style.backgroundImage = "linear-gradient(90deg, #3e0b02, #fff7f9)"
+                    })
+
                     socials.querySelectorAll("a").forEach((a) => {
                         a.style.color = dark_colors.main_txt;
                     })
@@ -146,6 +151,11 @@
                     header.querySelectorAll("a").forEach((a) => {
                         a.style.color = light_colors.main_txt;
                     })
+
+                    links.querySelectorAll("a").forEach((a) => {
+                        a.style.backgroundImage = "linear-gradient(90deg, rgb(0, 255, 0), rgb(16, 37, 16))"
+                    })
+
                     socials.querySelectorAll("a").forEach((a) => {
                         a.style.color = light_colors.main_txt;
                     })
